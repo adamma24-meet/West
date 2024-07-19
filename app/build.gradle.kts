@@ -42,6 +42,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -62,4 +63,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.arcgis.maps.kotlin)
+    implementation(libs.arcgis.maps.kotlin.toolkit.bom)
+    implementation(libs.arcgis.maps.kotlin.toolkit.geoview.compose)
+    implementation(libs.play.services.location)
 }
