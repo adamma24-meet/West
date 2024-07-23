@@ -132,7 +132,7 @@ fun SignUpScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(24.dp))
             Button(
                 onClick = {
-                    // TODO: Handle sign up functionality
+                    navController.navigate("map")
                 },
                 modifier = Modifier
                     .fillMaxWidth()
