@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.west"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -64,7 +64,5 @@ dependencies {
     implementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.arcgis.maps.kotlin)
-    implementation(libs.arcgis.maps.kotlin.toolkit.bom)
-    implementation(libs.arcgis.maps.kotlin.toolkit.geoview.compose)
     implementation(libs.play.services.location)
 }
