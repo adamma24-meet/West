@@ -44,25 +44,22 @@ android {
 
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.runtime.livedata)
-    implementation(libs.androidx.runtime.rxjava2)
-    implementation(libs.kotlinx.coroutines.guava)
-    implementation(libs.okhttp)
-    implementation(libs.material)
-    implementation(libs.junit)
-    implementation(libs.androidx.junit)
-    implementation(libs.androidx.espresso.core)
-    implementation(libs.androidx.ui.test.junit4)
-    implementation(libs.androidx.ui.tooling)
-    implementation(libs.androidx.ui.test.manifest)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.arcgis.maps.kotlin)
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    // Jetpack Compose Bill of Materials
+    implementation(platform("androidx.compose:compose-bom:2023.10.01"))
+    // Jetpack Compose dependencies
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.material3:material3")
+    // ArcGIS Map Kotlin SDK dependencies
+    implementation("com.esri:arcgis-maps-kotlin:200.4.0")
+    // Toolkit dependencies
+    implementation(platform("com.esri:arcgis-maps-kotlin-toolkit-bom:200.4.0"))
+    implementation("com.esri:arcgis-maps-kotlin-toolkit-geoview-compose")
+    implementation("com.google.android.material:material:1.6.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.5.1")
+    implementation("com.squareup.okhttp3:okhttp")
     implementation(libs.play.services.location)
+    implementation(libs.androidx.navigation.compose)
 }
