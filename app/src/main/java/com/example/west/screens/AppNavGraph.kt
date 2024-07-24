@@ -1,6 +1,5 @@
 package com.example.west.navigation
 
-import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -11,7 +10,7 @@ import com.example.west.screens.MapScreen
 import com.example.west.screens.SignUpScreen
 
 @Composable
-fun AppNavGraph(navController: NavHostController, context: Context) {
+fun AppNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
         startDestination = "home"
@@ -26,7 +25,7 @@ fun AppNavGraph(navController: NavHostController, context: Context) {
             SignUpScreen(navController)
         }
         composable("map") {
-            MapScreen(context)
+            MapScreen()
         }
     }
 }
