@@ -62,4 +62,5 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp")
     implementation(libs.play.services.location)
     implementation(libs.androidx.navigation.compose)
+    implementation ("com.esri.arcgisruntime:arcgis-android:100.15.0")
 }
