@@ -1,5 +1,6 @@
 package com.example.west
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
             val navController = rememberNavController()
             MaterialTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
-                    MainScreen(navController = navController)
+                    MainScreen(navController = navController, context = this)
                 }
             }
         }
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MainScreen(navController: NavHostController) {
+fun MainScreen(navController: NavHostController, context: Context) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
@@ -48,5 +49,5 @@ fun MainScreen(navController: NavHostController) {
         }
     }
 
-    AppNavGraph(navController = navController)
+    AppNavGraph(navController = navController, context = context)
 }
