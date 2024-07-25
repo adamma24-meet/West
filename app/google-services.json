@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "42730017820",
+    "project_id": "west-9f4ce",
+    "storage_bucket": "west-9f4ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42730017820:android:708278c9fd690a9d927bd9",
+        "android_client_info": {
+          "package_name": "com.example.west"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjDUTywuQeUxiPiMKK3ake9zUfIZRVqKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
