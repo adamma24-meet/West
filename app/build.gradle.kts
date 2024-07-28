@@ -68,4 +68,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation(libs.androidx.ui.tooling.preview.android)
+
+
 }
