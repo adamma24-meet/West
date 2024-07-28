@@ -12,7 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.surveyapp.ui.theme.SurveyAppTheme
+import com.example.west.R
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,14 +71,12 @@ fun SurveyScreen() {
             ) {
                 options.forEach { option ->
                     DropdownMenuItem(
-                        onClick = {
-                            updateChoice = option
-                            expanded = false
-                        }
-                    ) {
-                        Text(text = option)
-                    }
+                        onClick =
+                        { updateChoice = option
+                            ; expanded = false}
                 }
+                        Text(text = option))
+                        }
             }
         }
 
@@ -129,5 +127,6 @@ fun PreviewSurveyScreen() {
     SurveyAppTheme {
         SurveyScreen()
     }
+}
 }
 
